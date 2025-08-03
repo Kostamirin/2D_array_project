@@ -13,6 +13,21 @@ helper::~helper() //Производит действия в конце (в лю
     std::cout <<"*** The program is ends here ***" <<endl;
 }
 
+
+vector<vector<string>> block_generator(vector<vector<string>> space)
+{
+
+
+
+    return space;
+}
+
+vector<vector<string>> bonus_generator(vector<vector<string>> space)
+{
+    return space;
+}
+
+
 void helper::print_space(vector<vector<string>> space)
 {
     for (int i = 0; i < space.size(); i++)

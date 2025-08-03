@@ -16,7 +16,8 @@ public:
     ~helper();
 
     // Основные функции
-
+    vector<vector<string>> block_generator(vector<vector<string>> space);
+    vector<vector<string>> bonus_generator(vector<vector<string>> space);
 
     // Перманентные функции
     void print_space(vector<vector<string>> space);
