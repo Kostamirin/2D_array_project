@@ -17,8 +17,6 @@ helper::~helper() //Производит действия в конце (в лю
 vector<vector<string>> block_generator(vector<vector<string>> space)
 {
 
-
-
     return space;
 }
 
@@ -43,15 +41,25 @@ void helper::print_space(vector<vector<string>> space)
 }
 
 //// Работает из-за using namespace std; в helper.h файле
-vector<vector<string>> helper::set_nothing(vector<vector<string>> space, int weight, int height)
+vector<vector<string>> helper::set_base(vector<vector<string>> space, int weight, int height)
 //* weight- обозначает количество строк(=), height - количество столбцов(||)
 {
     vector<vector<string>> answer;
     for (int i = 0; i < weight; i++)
     {
+        if (i = 0 || i == weight - 1)
+        {
+            answer[i].push_back(std::string("⬛"));
+        }
+
         vector<string> side_vector;
         for (int j = 0; j < height; j++)
         {
+            if (j == 0 || j == height - 1)
+            {
+                answer[i].push_back(std::string("⬛"));
+            }
+
             side_vector.push_back("_");
         }
         answer.push_back(side_vector);

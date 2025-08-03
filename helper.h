@@ -21,7 +21,7 @@ public:
 
     // Перманентные функции
     void print_space(vector<vector<string>> space);
-    vector<vector<string>> set_nothing(vector<vector<string>> space, int weight, int height);
+    vector<vector<string>> set_base(vector<vector<string>> space, int weight, int height);
 
 private:
     std::map<string, char> symbols{{"blocked", '#'}, {"bonus", '*'}, {"end", '%'}};
