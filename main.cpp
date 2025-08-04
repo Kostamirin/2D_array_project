@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <map>
+#include <time.h>
 
 #include "helper.h"
 
@@ -19,6 +21,7 @@ map<string, char> map
         {"down", '─'}
     };
 
+    helper.print_space(vector);
     vector = helper.set_base(vector, 20, 20);
     helper.print_space(vector);
     helper.block_generator(vector);

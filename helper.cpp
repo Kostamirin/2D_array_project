@@ -28,12 +28,12 @@ vector<vector<string>> helper::bonus_generator(vector<vector<string>> space)
 
 void helper::print_space(vector<vector<string>> space)
 {
-    for (int i = 0; i < space.size(); i++)
+    for (int y = 0; y < space.size(); y++)
     {
-        for (int j = 0; j < space[i].size(); j++)
+        for (int x = 0; x < space[y].size(); x++)
         {
             cout <<"[";
-            cout << space[i][j];
+            cout << space[y][x];
             cout << "]";
         }
         cout << endl;
