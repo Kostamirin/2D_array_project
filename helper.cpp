@@ -44,24 +44,21 @@ void helper::print_space(vector<vector<string>> space)
 vector<vector<string>> helper::set_base(vector<vector<string>> space, int weight, int height)
 //* weight- обозначает количество строк(=), height - количество столбцов(||)
 {
-    vector<vector<string>> answer;
+    // Initialize the vector with proper dimensions
+    vector<vector<string>> answer(width, vector<string>(height, " "));
 
-    for (int y = 0; y < weight; y++)
+    // Fill the borders
+    for (int y = 0; y < width; y++)
     {
         answer[y][0] = "█";
         answer[y][height-1] = "█";
     }
 
-    for (int x = 0; x < weight; x++)
+    for (int x = 0; x < height; x++)
     {
         answer[0][x] = "█";
-        answer[weight-1][x] = "█";
+        answer[width-1][x] = "█";
     }
 
     return answer;
 }
-
-
-
-
-
