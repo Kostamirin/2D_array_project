@@ -14,13 +14,13 @@ helper::~helper() //Производит действия в конце (в лю
 }
 
 
-vector<vector<string>> block_generator(vector<vector<string>> space)
+vector<vector<string>> helper::block_generator(vector<vector<string>> space)
 {
 
     return space;
 }
 
-vector<vector<string>> bonus_generator(vector<vector<string>> space)
+vector<vector<string>> helper::bonus_generator(vector<vector<string>> space)
 {
     return space;
 }
@@ -45,25 +45,19 @@ vector<vector<string>> helper::set_base(vector<vector<string>> space, int weight
 //* weight- обозначает количество строк(=), height - количество столбцов(||)
 {
     vector<vector<string>> answer;
-    for (int i = 0; i < weight; i++)
+
+    for (int y = 0; y < weight; y++)
     {
-        if (i = 0 || i == weight - 1)
-        {
-            answer[i].push_back(std::string("⬛"));
-        }
-
-        vector<string> side_vector;
-        for (int j = 0; j < height; j++)
-        {
-            if (j == 0 || j == height - 1)
-            {
-                answer[i].push_back(std::string("⬛"));
-            }
-
-            side_vector.push_back("_");
-        }
-        answer.push_back(side_vector);
+        answer[y][0] = "█";
+        answer[y][height-1] = "█";
     }
+
+    for (int x = 0; x < weight; x++)
+    {
+        answer[0][x] = "█";
+        answer[weight-1][x] = "█";
+    }
+
     return answer;
 }
 
