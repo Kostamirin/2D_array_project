@@ -8,18 +8,11 @@
 
 using namespace std;
 
-
 int main()
 {
     helper helper;
-    vector<vector<string>> vector;
-map<string, char> map
-    {
-        {"block", '█'},
-        {"bonus", '★'},
-        {"up", '│'},
-        {"down", '─'}
-    };
+    // Инициализация вектора с правильными размерами (20x20), заполненного пробелами
+    vector<vector<string>> vector(20, std::vector<string>(20, " "));
 
     helper.print_space(vector);
     vector = helper.set_base(vector, 20, 20);
