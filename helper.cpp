@@ -15,6 +15,14 @@ helper::~helper() //Производит действия в конце (в лю
     std::cout << "*** The program is ends here ***" << endl;
 }
 
+vector<vector<int>> helper::find_path(vector<vector<string>> space)
+{
+    vector<vector<int>> answer;
+
+
+    return answer;
+}
+
 
 vector<vector<string>> helper::block_generator(vector<vector<string>> space)
 {
@@ -47,7 +55,7 @@ void helper::print_space(vector<vector<string>> space)
 
 //// Работает из-за using namespace std; в helper.h файле
 vector<vector<string>> helper::set_base(vector<vector<string>> space, int width, int height)
-//* weight- обозначает количество строк(=), height - количество столбцов(||)
+//* weight - обозначает количество строк(=, y), height - количество столбцов(||, x)
 {
     // Инициализация вектора с правильными размерами
     vector<vector<string>> answer(space.size(), vector<string>(space[0].size(), " "));
@@ -65,5 +73,6 @@ vector<vector<string>> helper::set_base(vector<vector<string>> space, int width,
         answer[width - 1][x] = map.at("block");
     }
 
+    answer[width-1][height-1] = map.at("end");
     return answer;
 }

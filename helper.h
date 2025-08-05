@@ -17,6 +17,7 @@ public:
     ~helper();
 
     // Основные функции
+    vector<vector<int>> find_path(vector<vector<string>> space);
     vector<vector<string>> block_generator(vector<vector<string>> space);
     vector<vector<string>> bonus_generator(vector<vector<string>> space);
 

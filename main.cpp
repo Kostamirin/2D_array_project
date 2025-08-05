@@ -19,6 +19,7 @@ int main()
     helper.print_space(vector);
     helper.block_generator(vector);
     // helper.bonus_generator(vector);
+    // helper.find_path(vector);
 
     return 0;
 }
