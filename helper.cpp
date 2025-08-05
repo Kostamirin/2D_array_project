@@ -42,7 +42,7 @@ void helper::print_space(vector<vector<string>> space)
     }
 
     // Таймаут для осознания лабиринта
-    std::this_thread::sleep_for((std::chrono::milliseconds(1000)));
+    std::this_thread::sleep_for((std::chrono::milliseconds(750)));
 }
 
 //// Работает из-за using namespace std; в helper.h файле

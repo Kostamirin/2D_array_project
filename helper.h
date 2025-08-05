@@ -21,11 +21,11 @@ public:
     vector<vector<string>> bonus_generator(vector<vector<string>> space);
 
     // Перманентные функции
-    void print_space(vector<vector<string>> space);
+    static void print_space(vector<vector<string>> space);
     vector<vector<string>> set_base(vector<vector<string>> space, int width, int height);
 
 private:
-    std::map<string, string> map{
+    const std::map<string, string> map {
         {"block", "█"},
         {"bonus", "*"},
         {"up", "│"},
