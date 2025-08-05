@@ -55,14 +55,14 @@ vector<vector<string>> helper::set_base(vector<vector<string>> space, int width,
     // Заполнить границы
     for (int y = 0; y < width; y++)
     {
-        answer[y][0] = "█";
-        answer[y][height - 1] = "█";
+        answer[y][0] = map.at("block");
+        answer[y][height - 1] = map.at("block");
     }
 
     for (int x = 0; x < height; x++)
     {
-        answer[0][x] = "█";
-        answer[width - 1][x] = "█";
+        answer[0][x] = map.at("block");
+        answer[width - 1][x] = map.at("block");
     }
 
     return answer;

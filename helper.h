@@ -25,12 +25,12 @@ public:
     vector<vector<string>> set_base(vector<vector<string>> space, int width, int height);
 
 private:
-    std::map<string, char> map{
-        {"block", '█'},
-        {"bonus", '★'},
-        {"up", '│'},
-        {"down", '─'},
-        {"end", '%'}
+    std::map<string, string> map{
+        {"block", "█"},
+        {"bonus", "*"},
+        {"up", "│"},
+        {"down", "─"},
+        {"end", "%"}
     };
 
 };
