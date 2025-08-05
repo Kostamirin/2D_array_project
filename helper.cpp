@@ -2,6 +2,8 @@
 
 #include "helper.h"
 
+#include <thread>
+
 
 helper::helper() //Производит действия в начале (в любом случае)
 {
@@ -39,7 +41,8 @@ void helper::print_space(vector<vector<string>> space)
         cout << endl;
     }
 
-    timex(1200);
+    // Таймаут для осознания лабиринта
+    std::this_thread::sleep_for((std::chrono::milliseconds(1000)));
 }
 
 //// Работает из-за using namespace std; в helper.h файле
