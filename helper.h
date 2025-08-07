@@ -36,6 +36,16 @@ private:
 
 };
 
+class person {
+public:
+    person();
+    ~person();
+
+    vector<int> position;
+    vector<vector<int>> path;
+
+};
+
 
 
 #endif //HELPER_H

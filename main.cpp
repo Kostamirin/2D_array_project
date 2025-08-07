@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <map>
+
 #include <time.h>
 
 #include "helper.h"
@@ -11,6 +12,8 @@ using namespace std;
 int main()
 {
     helper helper;
+    person person;
+
     // Инициализация вектора с правильными размерами (20x20), заполненного пробелами
     vector<vector<string>> vector(20, std::vector<string>(20, " "));
 
@@ -19,7 +22,7 @@ int main()
     helper.print_space(vector);
     helper.block_generator(vector);
     // helper.bonus_generator(vector);
-    // helper.find_path(vector);
+    person.path =  helper.find_path(vector);
 
     return 0;
 }
