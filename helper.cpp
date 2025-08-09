@@ -15,9 +15,11 @@ helper::~helper() //Производит действия в конце (в лю
     std::cout << "*** The program is ends here ***" << endl;
 }
 
-vector<vector<int>> helper::find_path(vector<vector<string>> space)
+vector<vector<int>> helper::find_path(vector<vector<string>> space, int y, int x)
 {
     vector<vector<int>> answer;
+    int position[2] = {y, x};
+
 
 
     return answer;

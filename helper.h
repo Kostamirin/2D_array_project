@@ -8,8 +8,8 @@
 #include <map>
 #include <algorithm>
 
-
 using namespace std;
+
 
 class helper {
 public:
@@ -17,7 +17,7 @@ public:
     ~helper();
 
     // Основные функции
-    vector<vector<int>> find_path(vector<vector<string>> space);
+    vector<vector<int>> find_path(vector<vector<string>> space, int y, int x);
     vector<vector<string>> block_generator(vector<vector<string>> space);
     vector<vector<string>> bonus_generator(vector<vector<string>> space);
 
@@ -33,7 +33,6 @@ private:
         {"down", "─"},
         {"end", "%"}
     };
-
 };
 
 class person {

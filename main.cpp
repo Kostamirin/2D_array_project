@@ -22,7 +22,7 @@ int main()
     helper.print_space(vector);
     helper.block_generator(vector);
     // helper.bonus_generator(vector);
-    person.path =  helper.find_path(vector);
+    person.path =  helper.find_path(vector, 0, 0);
 
     return 0;
 }
