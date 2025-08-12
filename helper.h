@@ -42,6 +42,8 @@ public:
 
     vector<int> position;
     vector<vector<int>> path;
+    vector<vector<bool>> block_position;
+    vector<vector<bool>> bonus_position;
 
 };
 
