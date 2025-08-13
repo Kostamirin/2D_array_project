@@ -15,15 +15,15 @@ helper::~helper() //Производит действия в конце (в лю
     std::cout << "*** The program is ends here ***" << endl;
 }
 
-vector<vector<int>> helper::find_path(vector<vector<string>> space, int y, int x)
-{
-    vector<vector<int>> answer;
-    int position[2] = {y, x};
-
-
-    answer = {{1,1},{1,2}};
-    return answer;
-}
+// vector<vector<int>> helper::find_path(vector<vector<string>> space, int y, int x)
+// {
+//     vector<vector<int>> answer;
+//     int position[2] = {y, x};
+//
+//
+//     answer = {{1,1},{1,2}};
+//     return answer;
+// }
 
 
 vector<vector<string>> helper::block_generator(vector<vector<string>> space)
@@ -75,6 +75,6 @@ vector<vector<string>> helper::set_base(vector<vector<string>> space, int width,
         answer[width - 1][x] = map.at("block");
     }
 
-    answer[width-1][height-1] = map.at("end");
+    answer[width-2][height-2] = map.at("end");
     return answer;
 }
